@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "discord-ai-text-bot"
+version = "0.1.0"
+description = "A simple discord bot connected to a ai (llama2)"
+authors = ["mccartheney <mccartheney@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    {include = "src/*.py"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+discord = "^2.3.2"
+pydantic = "^2.7.0"
+requests = "^2.31.0"
+click = "^8.1.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
